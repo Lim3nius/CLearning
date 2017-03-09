@@ -3,9 +3,8 @@
 
 #define HODNOTA 100
 enum vycet{VELIKOST_POLE_BASIC = 100};
-static long arr_indx=0;
-static int bit_idx=0; 
-//typedef bit_array_t unsigned long[];
+enum arr_indexes{UNITS, INDEX,TMP, TMP2};
+typedef unsigned long* bit_array_t;
 
 #define ba_create(array_name, size) \
 		unsigned long array_name[HODNOTA]; \
